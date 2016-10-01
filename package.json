@@ -1,0 +1,24 @@
+{
+  "name": "shopping-cart",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "enzyme": "^2.4.1",
+    "react-addons-test-utils": "^15.3.2",
+    "react-scripts": "0.6.1"
+  },
+  "dependencies": {
+    "deep-freeze": "0.0.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-router": "^2.8.1",
+    "redux": "^3.6.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "homepage": "http://folk.ntnu.no/andrkje/test/build/"
+}
