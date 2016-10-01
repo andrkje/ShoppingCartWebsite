@@ -1,6 +1,6 @@
 import * as todoActions from './../actions/todoActions';
 
-const todo = (state, action) => {
+const todo = (state=null, action) => {
     switch (action.type) {
         case todoActions.ADD_TODO:
             return {
