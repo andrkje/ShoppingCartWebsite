@@ -12,10 +12,4 @@ const App = () => {
     )
 };
 
-function mapStateToProps(state) {
-    return {
-        todos: state.todos
-    }
-}
-
 export default App;
