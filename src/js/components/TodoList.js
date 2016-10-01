@@ -6,9 +6,19 @@ import AddTodo from './AddTodo'
 
 class TodoList extends React.Component {
 
+    check(id) {
+        console.log('check', id)
+    }
+
     renderListItems() {
         return this.props.todos.map((todo) => {
-            return <li key={todo.id}>{todo.title}</li>
+            return (
+                <li key={todo.id}>
+                    <b>{todo.title}</b>
+                    <input type="checkbox" onClick={this.check.bind(this, todo.id)}/><br/>
+                    {todo.description}
+                </li>
+            );
         });
     }
 

@@ -9,13 +9,21 @@ var id = 1;
 
 class AddTodo extends React.Component {
 
-    addTodo(event) {
-        this.props.add(id++,'test','test')
+    addTodo() {
+        let title = this.titleInput.value;
+        let description = this.descriptionInput.value;
+        this.props.add(id++, title, description)
     }
 
     render() {
         return (
             <div>
+                <input ref={ (node) => {
+                    this.titleInput = node
+                }}/><br/>
+                <input ref={ (node) => {
+                    this.descriptionInput = node
+                }}/><br/>
                 <button onClick={
                     this.addTodo.bind(this)
                 }>Add</button>
