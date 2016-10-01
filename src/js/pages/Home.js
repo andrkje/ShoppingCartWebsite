@@ -1,7 +1,9 @@
 import React from 'react';
 import { createStore } from 'redux';
 
-export default class Component extends React.Component {
+import TodoList from '../components/TodoList'
+
+export default class Home extends React.Component {
     render() {
         return (
             <div>
