@@ -25,10 +25,7 @@ const todo = (state=null, action) => {
             }
             return state;
         case todoActions.DELETE_TODO:
-            if (state.id !== action.id) {
-                return state;
-            }
-            break;
+            return state.id !== action.id;
         default:
             return state;
     }
