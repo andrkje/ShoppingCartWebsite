@@ -3,11 +3,12 @@ import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
 import AddTodo from './AddTodo'
+import { toggleTodoChecked } from '../actions/todoActions'
 
 class TodoList extends React.Component {
 
     check(id) {
-        console.log('check', id)
+        this.props.toggleTodoChecked(id);
     }
 
     renderListItems() {
@@ -41,5 +42,8 @@ function mapStateToProps(state) {
     }
 }
 
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({toggleTodoChecked: toggleTodoChecked}, dispatch)
+}
 
-export default connect(mapStateToProps)(TodoList);
+export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
