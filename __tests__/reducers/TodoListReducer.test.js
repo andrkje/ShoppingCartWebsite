@@ -1,7 +1,7 @@
 import deepFreeze from 'deep-freeze';
 
 import * as todoListActions from '../../src/js/actions/todoListActions';
-import todoList from '../../src/js/reducers/TodoListReducer';
+import todoList from '../../src/js/reducers/TodoListsReducer';
 
 it('Default state', () => {
     const action = {
