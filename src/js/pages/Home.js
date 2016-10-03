@@ -1,14 +1,14 @@
 import React from 'react';
 import { createStore } from 'redux';
 
-import TodoList from '../components/TodoList'
+import TodoLists from '../components/TodoLists'
 
 export default class Home extends React.Component {
     render() {
         return (
             <div>
                 <h1>Home</h1>
-                <p>test</p>
+                <TodoLists/>
             </div>
         );
     }
