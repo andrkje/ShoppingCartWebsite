@@ -1,13 +1,10 @@
 import React from 'react';
-import TodoList from '../components/TodoList'
+import Home from '../pages/Home'
 
 const App = () => {
     return(
         <div>
-            <h1>App</h1>
-
-            <TodoList />
-
+            <Home />
         </div>
     )
 };
