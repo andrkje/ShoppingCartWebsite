@@ -1,7 +1,7 @@
 import todoReducer from './TodoReducer';
 import * as todoListActions from './../actions/todoListActions';
 
-const todoList = (state = [], action) => {
+const todoLists = (state = [], action) => {
     switch (action.type) {
         case todoListActions.ADD_TODO_LIST:
             return  [
@@ -36,28 +36,4 @@ const todoList = (state = [], action) => {
 
 };
 
-export default todoList;
-
-
-/*
-
- case todoListActions.ADD_TODO:
- return  [
- ...state,
- {
- id: action.id,
- title: action.title,
- description: action.description,
- checked: false
- }
- ];
- case todoListActions.TOGGLE_TODO_CHECKED:
- return state.map(todo => todoReducer(todo, action));
- case todoListActions.CHANGE_TITLE_TODO:
- return state.map(todo => todoReducer(todo, action));
- case todoListActions.CHANGE_DESCRIPTION_TODO:
- return state.map(todo => todoReducer(todo, action));
- case todoListActions.DELETE_TODO:
- return state.filter(todo => todoReducer(todo, action));
-
- */
+export default todoLists;
