@@ -7,6 +7,14 @@ import { add } from '../actions/todoListActions'
 var id = 1;
 
 class AddTodoList extends React.Component {
+    componentDidMount() {
+        this.props.add(id++, "Todo list "+id, 'This is the description')
+        this.props.add(id++, "Todo list "+id, 'This is the description')
+        this.props.add(id++, "Todo list "+id, 'This is the description')
+        this.props.add(id++, "Todo list "+id, 'This is the description')
+        this.props.add(id++, "Todo list "+id, 'This is the description')
+
+    }
 
     addTodoList() {
         const title = this.titleInput.value;
