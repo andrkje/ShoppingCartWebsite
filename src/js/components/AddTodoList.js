@@ -20,6 +20,12 @@ class AddTodoList extends React.Component {
         const title = this.titleInput.value;
         const description = this.descriptionInput.value;
         this.props.add(id++, title, description)
+        this.resetForm()
+    }
+
+    resetForm() {
+        this.titleInput.value = ''
+        this.descriptionInput.value = '';
     }
 
     render() {
